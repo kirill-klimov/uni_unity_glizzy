@@ -53,7 +53,7 @@ PlayerSettings:
   numberOfMipsStripped: 0
   m_StackTraceTypes: 010000000100000001000000010000000100000001000000
   iosShowActivityIndicatorOnLoading: -1
-  androidShowActivityIndicatorOnLoading: 0
+  androidShowActivityIndicatorOnLoading: -1
   iosUseCustomAppBackgroundBehavior: 0
   iosAllowHTTPDownload: 1
   allowedAutorotateToPortrait: 1
@@ -150,9 +150,12 @@ PlayerSettings:
   m_ColorGamuts: 00000000
   targetPixelDensity: 30
   resolutionScalingMode: 0
-  androidSupportedAspectRatio: 0
+  androidSupportedAspectRatio: 1
   androidMaxAspectRatio: 1.94
-  applicationIdentifier: {}
+  applicationIdentifier:
+    Android: com.DefaultCompany.Glizzy
+    Standalone: com.DefaultCompany.Glizzy
+    iPhone: com.DefaultCompany.Glizzy
   buildNumber:
     Standalone: 0
     iPhone: 0
@@ -269,7 +272,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: dd48eda81d4aff1438ae2e6e06f39c8e, type: 3}
+      m_Icon: {fileID: 2800000, guid: e998781332f9d9f4090cd259f21ce179, type: 3}
       m_Width: 128
       m_Height: 128
       m_Kind: 0

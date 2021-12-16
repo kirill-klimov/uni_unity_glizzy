@@ -11,7 +11,7 @@ public class Patient : MonoBehaviour
     bool isHealthy = false;
     void Start()
     {
-        spriteIndex = Random.Range(0, 4);
+        spriteIndex = Random.Range(0, sickSprites.Count);
         GetComponentsInChildren<SpriteRenderer>()[1].sprite = sickSprites[spriteIndex];
         particles = GetComponentInChildren<ParticleSystem>();
         ClickArea.ClickHappend += OnClickHappend;

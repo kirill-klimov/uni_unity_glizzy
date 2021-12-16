@@ -11,75 +11,67 @@ public class GameManager : MonoBehaviour
     static List<GameItem> itemList = new List<GameItem>() {
         new GameItem() {
             Id = 0,
-            Price = 1,
-            ProgressMultiplier = 1,
+            Price = 30,
+            ProgressMultiplier = 0.1f,
             MoneyMultiplier = 1,
             Type = 0,
         },
         new GameItem() {
             Id = 1,
-            Price = 1,
-            ProgressMultiplier = 1,
+            Price = 90,
+            ProgressMultiplier = 0.25f,
             MoneyMultiplier = 1,
             Type = 0,
         },
         new GameItem() {
             Id = 2,
-            Price = 1,
-            ProgressMultiplier = 1,
+            Price = 180,
+            ProgressMultiplier = 0.35f,
             MoneyMultiplier = 1,
             Type = 0,
         },
         new GameItem() {
             Id = 3,
-            Price = 1,
-            ProgressMultiplier = 1,
+            Price = 270,
+            ProgressMultiplier = 0.5f,
             MoneyMultiplier = 1,
             Type = 0,
         },
 
         new GameItem() {
             Id = 4,
-            Price = 1,
-            ProgressMultiplier = 1,
-            MoneyMultiplier = 1,
+            Price = 350,
+            ProgressMultiplier = 0.6f,
+            MoneyMultiplier = 0,
             Type = 1,
         },
         new GameItem() {
             Id = 5,
-            Price = 1,
-            ProgressMultiplier = 1,
-            MoneyMultiplier = 1,
+            Price = 600,
+            ProgressMultiplier = 0.7f,
+            MoneyMultiplier = 0,
             Type = 1,
         },
         new GameItem() {
             Id = 6,
-            Price = 1,
-            ProgressMultiplier = 1,
-            MoneyMultiplier = 1,
+            Price = 900,
+            ProgressMultiplier = 0.8f,
+            MoneyMultiplier = 0,
             Type = 1,
         },
-        new GameItem() {
-            Id = 7,
-            Price = 1,
-            ProgressMultiplier = 1,
-            MoneyMultiplier = 1,
-            Type = 1,
-        },
+        // new GameItem() {
+        //     Id = 7,
+        //     Price = 1500,
+        //     ProgressMultiplier = 0.9f,
+        //     MoneyMultiplier = 0,
+        //     Type = 1,
+        // },
     };
-    static List<GameItem> boughtItems = new List<GameItem>() {
-        new GameItem() {
-            Id = 4,
-            Price = 1,
-            ProgressMultiplier = 1,
-            MoneyMultiplier = 1,
-            Type = 1,
-        },
-    };
+    static List<GameItem> boughtItems = new List<GameItem>();
     public static float ProgressMultiplier = 1f; 
     public static int MoneyAmount = 0;
     static int moneyMultiplier = 1; 
-    static int doctorAmount = 1;
+    static int doctorAmount = 0;
     [SerializeField] GameObject[] doctors;
     public static event Action MoneyAmountUpdated;
     void Start()
